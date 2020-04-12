@@ -1,0 +1,71 @@
+.calendar-wrapper {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    background-color: white;
+    color: black;
+    border: 1px solid #aeaeae;
+    width: 100%;
+    font-size: 80%;
+    text-align: center;
+    box-shadow: 2px 2px 2px #d2d3d5;
+}
+
+.calendar-wrapper .date-wrapper {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.calendar-wrapper .date-wrapper td {
+    padding: 10px;
+}
+
+.calendar-wrapper .date-wrapper .month-wrapper {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: cornflowerblue;
+}
+
+.calendar-wrapper .date-wrapper .month-wrapper td {
+    cursor: auto;
+}
+
+.calendar-wrapper .date-wrapper .month-wrapper td.button {
+    cursor: pointer;
+}
+
+.calendar-wrapper .date-wrapper .weekday-wrapper {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: cornflowerblue;
+}
+
+.calendar-wrapper .date-wrapper .weekday-wrapper td {
+    cursor: auto;
+}
+
+.calendar-wrapper .date-wrapper .day-wrapper {
+    cursor: pointer;
+}
+
+.calendar-wrapper .date-wrapper .day-wrapper.active {
+    background: cornflowerblue;
+    color: white;
+    font-weight: bold;
+}
+
+.calendar-wrapper .date-wrapper .day-wrapper.active:hover {
+    background-color: cornflowerblue;
+}
+
+.calendar-wrapper .date-wrapper .day-wrapper.disabled {
+    color: #b1b1b1;
+    pointer-events: none;
+}
+
+.calendar-wrapper .date-wrapper .day-wrapper:hover {
+    background-color: #c5daff;
+}

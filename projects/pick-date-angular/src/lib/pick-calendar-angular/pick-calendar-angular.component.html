@@ -1,0 +1,37 @@
+<div class="calendar-wrapper">
+    <table class="date-wrapper">
+        <thead>
+            <tr class="month-wrapper" [ngStyle]="{ background: backgroundColor }">
+                <td *ngIf="showPrevious; else showBlank" class="button" (click)=previous()>
+                    &lt;
+                </td>
+                <td colSpan=5>
+                    {{months[month]}} {{year}}
+                </td>
+                <td *ngIf="showNext; else showBlank" class="button" (click)=next()>
+                    &gt;
+                </td>
+                <ng-template #showBlank>
+                    <td></td>
+                </ng-template>
+            </tr>
+            <tr class="weekday-wrapper" [ngStyle]="{ background: backgroundColor }">
+                <td *ngFor="let weekday of weekdays">{{weekday.substring(0, 1)}}</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of rows">
+                <ng-container *ngFor="let column of row">
+                    <ng-container *ngIf="column; else showBlank">
+                        <td (click)="handleOnClick(column)" [ngStyle]="
+                    { 'background-color': column === selectedDay ? backgroundColor: 'white' }" class="day-wrapper"
+                            [ngClass]="setClasses(column)" (mouseenter)="onMouseEnter($event, column)"
+                            (mouseleave)="onMouseLeave($event, column)">
+                            {{column}}
+                        </td>
+                    </ng-container>
+                </ng-container>
+            </tr>
+        </tbody>
+    </table>
+</div>

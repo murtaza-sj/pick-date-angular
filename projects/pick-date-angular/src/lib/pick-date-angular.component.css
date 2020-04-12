@@ -1,0 +1,22 @@
+#date-picker {
+    position: relative;
+    width: 100%;
+}
+
+#date-picker input {
+    width: 100%;
+    border: 1px solid #aeaeae;
+    padding: 2px 0px;
+}
+
+#date-picker input:focus {
+    outline: 2px auto #aeaeae;
+}
+
+#date-picker .border-bottom-0 {
+    border-bottom: 0px;
+}
+
+#date-picker .border-bottom-1 {
+    border-bottom: 1px solid #aeaeae;
+}

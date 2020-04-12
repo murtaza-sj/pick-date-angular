@@ -1,0 +1,8 @@
+<div id="date-picker">
+    <input type="text" aria-label="date-picker" [ngModel]="onFormat(value)" (ngModelChange)="handleOnInputChange($event)"
+        (click)="handleOnClick()" [readOnly]=isInputDisabled />
+    <ng-content></ng-content>
+    <pick-calendar-angular *ngIf="showCalendar" [date]="value" (changeInputValue)=changeInputValue($event)
+        [minDay]=minDay [maxDay]=maxDay [theme]=theme>
+    </pick-calendar-angular>
+</div>
