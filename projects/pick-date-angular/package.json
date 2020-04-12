@@ -4,10 +4,10 @@
   "description": "A date picker for your Angular applications, based on Regular Expression checks.",
   "author": "Murtuza S. Jetpurwala",
   "license": "MIT",
-  "homepage": "https://github.com/murtaza-sj/pick-date-angular#readme",
+  "homepage": "https://github.com/murtaza-sj/pick-date-angular/blob/master/projects/pick-date-angular/README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/murtaza-sj/pick-date-angular.git"
+    "url": "https://github.com/murtaza-sj/pick-date-angular/tree/master/projects/pick-date-angular"
   },
   "keywords": [
     "angular",
